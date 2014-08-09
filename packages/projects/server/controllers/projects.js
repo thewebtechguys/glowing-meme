@@ -29,6 +29,7 @@ exports.create = function(req, res) {
 
   project.save(function(err) {
     if (err) {
+      process.stdout.write('hihi' + err);
       return res.json(500, {
         error: 'Cannot save the project'
       });

@@ -18,9 +18,9 @@ Projects.register(function(app, auth, database) {
 
   //We are adding a link to the main menu for all authenticated users
   Projects.menus.add({
-    title: 'projects example page',
-    link: 'projects example page',
-    roles: ['authenticated'],
+    title: 'Projects',
+    link: 'all projects',
+    roles: ['admin'],
     menu: 'main'
   });
 
